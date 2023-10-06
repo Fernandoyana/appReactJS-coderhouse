@@ -1,0 +1,24 @@
+#link{
+    margin-right: 10px;
+    color: white;
+}
+#nombre{
+    padding: 10px;
+    font-weight: bold;
+}
+#nombre a{
+    color: aliceblue;
+}
+#nombre span{
+    color: red;
+}
+.cantidad{
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+.navbar{
+    font-family: poppins;
+    color: red;
+    background-color: black;
+}

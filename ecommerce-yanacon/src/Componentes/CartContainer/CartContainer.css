@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.div1{
+    margin: 20px;
+}
+.div1 h2{
+    margin-top: 35px;
+}
+
+#btnX{
+    margin-left: 20px;
+}
+
+
+.div2{
+    font-family: poppins;
+    text-align: center;
+}
+.div2 h2{
+    
+    margin: 60px 0 30px 0;
+}
+.btn1{
+    margin-right: 10px;
+    margin-top: 30px;
+}
+

@@ -25,3 +25,22 @@
     margin-top: 30px;
 }
 
+form{
+    background-color: rgba(0, 0, 0, 0.856);
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 8px;
+    height: auto;
+    width: 270px;
+    margin-top: 70px;
+}
+form p{
+    color: aliceblue;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.form input{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    text-align: center;
+}

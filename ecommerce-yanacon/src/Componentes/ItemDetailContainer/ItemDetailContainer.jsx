@@ -5,6 +5,7 @@ import { doc, getDoc, getFirestore } from "firebase/firestore"
 import './ItemDetailContainer.css'
 
 const ItemDetailContainer = () => {
+    const [loading, setLoading] = useState(true)
     const [productos,setProducts] = useState({})
     const {pid} = useParams()
     
@@ -15,12 +16,18 @@ const ItemDetailContainer = () => {
         getDoc(queryDoc)
         .then(resp => ({id: resp.id, ...resp.data()}))
         .then(resp => setProducts(resp))
+        .finally(()=> setLoading(false))
     }, [])
 
     return (
         <center>
             <h3 className="h3">DETALLES</h3>
-            <ItemDetail productos={productos}/>
+            {loading ? <h2 className="loading">Su producto está cargando.</h2> 
+                    : 
+                    <>
+                    <ItemDetail productos={productos}/>
+                    </>
+                }
         </center>
     )
 }

@@ -43,7 +43,11 @@ const CartContainer = () => {
         })
     }
     return (
-        cartList.length > 0 ? 
+        <>
+        {id !== '' && 
+        <h3 id="id">La identificación de su producto es: <span>{id}</span></h3>}
+        <hr/>
+        {cartList.length > 0 ? 
             <center className="div1">
                 {cartList.map(prod => 
                 <div  key={prod.id}>
@@ -88,7 +92,8 @@ const CartContainer = () => {
                 <div className="div2">
                 <h2>El carrito está vacío.</h2>
                 <Link to='/' className="btn btn-outline-dark">Ir a Comprar</Link>
-                </div>
+                </div>}
+        </>
 
     )
 }
